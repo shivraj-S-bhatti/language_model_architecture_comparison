@@ -211,8 +211,7 @@ If you use this code or findings in your research, please cite:
 @article{bhatti2024architectural,
   title={Architectural Trade-offs in Small Language Models Under Compute Constraints},
   author={Bhatti, Shivraj Singh},
-  journal={CS689 Mini-Project},
-  year={2024},
+  year={2025},
   url={https://github.com/shivraj-S-bhatti/language_model_architecture_comparison}
 }
 ```
