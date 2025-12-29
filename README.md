@@ -125,16 +125,51 @@ The notebook includes hyperparameter sweeps for:
 
 ## Results
 
-All generated plots are saved in the `images/` directory:
+### Training Curves
 
-- **Training Curves**: `tiny_train_val_loss.png`, `ptb_loss.png`, `wikitext2_loss.png`
-- **Efficiency Comparisons**: `tiny_loss_vs_flops.png`, `wordlevel_loss_vs_flops.png`
-- **Hyperparameter Sweeps**: 
-  - `linear_ctx_vs_loss.png`
-  - `mlp_hidden_vs_loss.png`
-  - `attn_heads_vs_loss.png`
-  - `trans_layers_vs_loss.png`
-- **RoPE Comparison**: `tiny_learned_vs_rope_loss.png`, `tiny_learned_vs_rope_flops.png`
+#### Tiny Shakespeare - All Architectures
+![Training and Validation Loss](images/tiny_train_val_loss.png)
+
+#### Word-Level Models
+<div align="center">
+  <img src="images/ptb_loss.png" alt="PTB Training Dynamics" width="80%"/>
+  <p><em>PTB Training and Validation Loss</em></p>
+</div>
+
+<div align="center">
+  <img src="images/wikitext2_loss.png" alt="WikiText-2 Training Dynamics" width="80%"/>
+  <p><em>WikiText-2 Training and Validation Loss</em></p>
+</div>
+
+### Efficiency Comparisons
+
+#### Character-Level (Tiny Shakespeare)
+![Test NLL vs Training FLOPs](images/tiny_loss_vs_flops.png)
+
+#### Word-Level Models
+![Word-Level Test NLL vs Training FLOPs](images/wordlevel_loss_vs_flops.png)
+
+### Hyperparameter Sweeps
+
+#### Linear Model: Context Length
+![Linear Model Context Length Sweep](images/linear_ctx_vs_loss.png)
+
+#### MLP: Hidden Dimension
+![MLP Hidden Dimension Sweep](images/mlp_hidden_vs_loss.png)
+
+#### Self-Attention: Number of Heads
+![Self-Attention Heads Sweep](images/attn_heads_vs_loss.png)
+
+#### Transformer: Number of Layers
+![Transformer Layers Sweep](images/trans_layers_vs_loss.png)
+
+### RoPE Positional Encoding Comparison
+
+#### Training Dynamics
+![Learned vs RoPE Loss](images/tiny_learned_vs_rope_loss.png)
+
+#### Efficiency Comparison
+![Learned vs RoPE FLOPs](images/tiny_learned_vs_rope_flops.png)
 
 ### Key Results Summary
 
