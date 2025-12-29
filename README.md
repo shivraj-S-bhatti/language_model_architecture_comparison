@@ -92,6 +92,11 @@ jupyter notebook language_model_architecture_comparison.ipynb
 
 The repository implements four progressively complex architectures:
 
+<div align="center">
+  <img src="images/model_architectures.png" alt="Model Architecture Comparison" width="90%"/>
+  <p><em>LeNet-style architecture diagrams showing the four model designs</em></p>
+</div>
+
 1. **Linear Model**: Multinomial logistic regression over concatenated embeddings
 2. **MLP**: Two hidden layers with ReLU activations and dropout
 3. **Self-Attention**: Single transformer block with causal multi-head attention
@@ -132,44 +137,60 @@ The notebook includes hyperparameter sweeps for:
 
 #### Word-Level Models
 <div align="center">
-  <img src="images/ptb_loss.png" alt="PTB Training Dynamics" width="80%"/>
+  <img src="images/ptb_loss.png" alt="PTB Training Dynamics" width="60%"/>
   <p><em>PTB Training and Validation Loss</em></p>
 </div>
 
 <div align="center">
-  <img src="images/wikitext2_loss.png" alt="WikiText-2 Training Dynamics" width="80%"/>
+  <img src="images/wikitext2_loss.png" alt="WikiText-2 Training Dynamics" width="60%"/>
   <p><em>WikiText-2 Training and Validation Loss</em></p>
 </div>
 
 ### Efficiency Comparisons
 
 #### Character-Level (Tiny Shakespeare)
-![Test NLL vs Training FLOPs](images/tiny_loss_vs_flops.png)
+<div align="center">
+  <img src="images/tiny_loss_vs_flops.png" alt="Test NLL vs Training FLOPs" width="60%"/>
+</div>
 
 #### Word-Level Models
-![Word-Level Test NLL vs Training FLOPs](images/wordlevel_loss_vs_flops.png)
+<div align="center">
+  <img src="images/wordlevel_loss_vs_flops.png" alt="Word-Level Test NLL vs Training FLOPs" width="60%"/>
+</div>
 
 ### Hyperparameter Sweeps
 
 #### Linear Model: Context Length
-![Linear Model Context Length Sweep](images/linear_ctx_vs_loss.png)
+<div align="center">
+  <img src="images/linear_ctx_vs_loss.png" alt="Linear Model Context Length Sweep" width="60%"/>
+</div>
 
 #### MLP: Hidden Dimension
-![MLP Hidden Dimension Sweep](images/mlp_hidden_vs_loss.png)
+<div align="center">
+  <img src="images/mlp_hidden_vs_loss.png" alt="MLP Hidden Dimension Sweep" width="60%"/>
+</div>
 
 #### Self-Attention: Number of Heads
-![Self-Attention Heads Sweep](images/attn_heads_vs_loss.png)
+<div align="center">
+  <img src="images/attn_heads_vs_loss.png" alt="Self-Attention Heads Sweep" width="60%"/>
+</div>
 
 #### Transformer: Number of Layers
-![Transformer Layers Sweep](images/trans_layers_vs_loss.png)
+<div align="center">
+  <img src="images/trans_layers_vs_loss.png" alt="Transformer Layers Sweep" width="60%"/>
+</div>
 
 ### RoPE Positional Encoding Comparison
 
 #### Training Dynamics
-![Learned vs RoPE Loss](images/tiny_learned_vs_rope_loss.png)
+<div align="center">
+  <img src="images/tiny_learned_vs_rope_loss.png" alt="Learned vs RoPE Loss" width="60%"/>
+</div>
 
 #### Efficiency Comparison
-![Learned vs RoPE FLOPs](images/tiny_learned_vs_rope_flops.png)
+<div align="center">
+  <img src="images/tiny_learned_vs_rope_flops.png" alt="Learned vs RoPE FLOPs" width="60%"/>
+</div>
 
 ### Key Results Summary
 
