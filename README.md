@@ -2,7 +2,7 @@
 
 This repository contains code and experiments for a systematic empirical study of small language models under strict compute constraints, analyzing how architectural choices and training budget interact to determine performance.
 
-**Paper**: [Architectural Trade-offs in Small Language Models Under Compute Constraints](https://github.com/shivraj-S-bhatti/language_model_architecture_comparison)
+**Paper**: [Architectural Trade-offs in Small Language Models Under Compute Constraints](https://arxiv.org/abs/2512.20877)
 
 **Author**: Shivraj Singh Bhatti (ssbhatti@umass.edu)
 
